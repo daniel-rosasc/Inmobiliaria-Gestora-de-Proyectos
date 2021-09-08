@@ -76,16 +76,14 @@ a.nav-link:hover {
 }
 .container .card {
   border: whitesmoke solid 1px;
-  box-shadow: 2px 1px 0px var(--amarilloLight);
+  box-shadow: 1px 2px 1px 0.16px var(--amarilloDark);
 }
 
 .card:hover {
-  transform: translateY(10px);
+  transform: translateY(5px);
   box-shadow: 0px 1px 3px 3px var(--amarilloDark);
 }
-.card-body hr {
-  color: var(--amarilloDark);
-}
+
 
 .card img {
   width: 100%;

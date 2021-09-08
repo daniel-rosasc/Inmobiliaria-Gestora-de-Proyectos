@@ -48,13 +48,10 @@
   max-width: 1850px;
 }
 
-a.nav-link {
-  color: var(--grisDark);
+.nav-link{
+  color: #d00be2;
 }
-a.nav-link:hover {
-  color: var(--azulDark);
-  cursor: pointer;
-}
+
 
 .container-redes {
   display: flex;
@@ -105,7 +102,19 @@ a.nav-link:hover {
   color: var(--novenoLight);
 }
 
+.VISION { 
+  background-color: var(--octavoDark);
+  border-radius: 5px;
+}
+.MISION {
+  background-color: var(--octavoDark);
+  border-radius: 5px;
+}
 
+
+.parrafo-vision-mision {
+  color: white;
+}
 
 .card img {
   width: 100%;

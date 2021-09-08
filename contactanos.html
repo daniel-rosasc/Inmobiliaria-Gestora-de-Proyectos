@@ -18,28 +18,30 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg col-12	col-sm-12	col-md-12	col-lg-12	col-xl-12	col-xxl-12">
+        <nav class="navbar d-flex navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand nav-link" href="./index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="nav-link" href="./index.html">Inicio</a>
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-warning"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./Quienes-somos.html">Quienes Somos</a>
+                            <a class="nav-link active" href="./Quienes-somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./indexa.html">Servicios</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Portafolio
                             </a>
                             <ul class="dropdown-menu color" aria-labelledby="navbarDropdownMenuLink">
-
-                                
+                                <li> <a class="dropdown-item" href="./inmuebles.html">inmuebles</a></li>
                                 <li><a class="dropdown-item" href="#">Asesorias</a></li>
                                 <li><a class="dropdown-item" href="#">Proyectos sobre planos</a></li>
                                 <li><a class="dropdown-item" href="#">Mantenimientos</a></li>
@@ -47,18 +49,9 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="indexa.html">
-                                Servicios
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="inmuebles.html">
-                                Inmuebles
-                            </a>
-                        </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">Contactenos</a>
+                            <a class="nav-link" href="contactanos.html">Contáctenos</a>
                         </li>
 
                     </ul>
@@ -93,9 +86,8 @@
 
             </li>
             <li class="Redes">
-                <a
-                    href="https://www.linkedin.com/in/jorly-katiana-02372025"><img
-                        src="./imagenes/iconos/linkeding.jpeg" alt=""></a>
+                <a href="https://www.linkedin.com/in/jorly-katiana-02372025"><img src="./imagenes/iconos/linkeding.jpeg"
+                        alt=""></a>
 
             </li>
 
@@ -113,7 +105,7 @@
             <div class="row">
 
                 <!--contenedor formulario-->
-                <div class="col" >
+                <div class="col">
                     <form>
                         <div class="card-formulario">
 
@@ -176,7 +168,8 @@
                                 </div>
 
                                 <div class="d-flex justify-content-end">
-                                   <a href="contactanos.html"> <button type="submit" class="btn btn-warning ">Suscríbete</button></a>
+                                    <a href="contactanos.html"> <button type="submit"
+                                            class="btn btn-warning ">Suscríbete</button></a>
                                 </div>
 
                             </div>
@@ -193,7 +186,7 @@
 
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63647.890185696204!2d-75.22179722204658!3d4.412374257222389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38c491115f4d5f%3A0xe0cae43859d2401e!2zSWJhZ3XDqSwgVG9saW1h!5e0!3m2!1ses!2sco!4v1628820506254!5m2!1ses!2sco"
-                            width="600" height="450px" >
+                            width="600" height="450px">
                         </iframe>
 
                     </div>
@@ -230,8 +223,7 @@
                             alt=""></a></p>
                 <p class="parrafo-footer"> Instagram <a href=""> <img src="./imagenes/iconos/Iconos_RRSS_IG.png"
                             alt=""></a></p>
-                <p class="parrafo-footer"> linkedin <a href=""> <img src="./imagenes/iconos/linkeding.jpeg"
-                            alt=""></a>
+                <p class="parrafo-footer"> linkedin <a href=""> <img src="./imagenes/iconos/linkeding.jpeg" alt=""></a>
                 </p>
 
 

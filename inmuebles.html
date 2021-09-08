@@ -16,28 +16,30 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg col-12	col-sm-12	col-md-12	col-lg-12	col-xl-12	col-xxl-12">
+        <nav class="navbar d-flex navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand nav-link" href="./index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="nav-link" href="./index.html">Inicio</a>
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-warning"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./Quienes-somos.html">Quienes Somos</a>
+                            <a class="nav-link active" href="./Quienes-somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./indexa.html">Servicios</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Portafolio
                             </a>
                             <ul class="dropdown-menu color" aria-labelledby="navbarDropdownMenuLink">
-
-                                
+                                <li> <a class="dropdown-item" href="./inmuebles.html">inmuebles</a></li>
                                 <li><a class="dropdown-item" href="#">Asesorias</a></li>
                                 <li><a class="dropdown-item" href="#">Proyectos sobre planos</a></li>
                                 <li><a class="dropdown-item" href="#">Mantenimientos</a></li>
@@ -45,18 +47,9 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="indexa.html">
-                                Servicios
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="inmuebles.html">
-                                Inmuebles
-                            </a>
-                        </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">Contactenos</a>
+                            <a class="nav-link" href="contactanos.html">Contáctenos</a>
                         </li>
 
                     </ul>
@@ -92,9 +85,8 @@
 
             </li>
             <li class="Redes">
-                <a
-                    href="https://www.linkedin.com/in/jorly-katiana-02372025"><img
-                        src="./imagenes/iconos/linkeding.jpeg" alt=""></a>
+                <a href="https://www.linkedin.com/in/jorly-katiana-02372025"><img src="./imagenes/iconos/linkeding.jpeg"
+                        alt=""></a>
 
             </li>
 
@@ -123,10 +115,7 @@
             <div class="carousel-item col-12	col-sm-12	col-md-12	col-lg-12	col-xl-10	col-xxl-12">
                 <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
                     class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
+                
             </div>
             <div class="carousel-item col-12	col-sm-12	col-md-12	col-lg-12	col-xl-10	col-xxl-12">
                 <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122430376.jpg"
@@ -160,155 +149,189 @@
             <h2 class="Servicios-principal text-center"> Arriendos </h2>
         </div>
 
-        <section class="container-card d-flex justify-content-evenly  flex-wrap">
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
+        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container d-flex justify-content-evenly mb-3">
+                     
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">pedregal</li>
-                    <li class="list-group-item">50 m </li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                <div class="carousel-item ">
+                    <div class="container d-flex justify-content-evenly mb-3">
+                       
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-evenly mb-3">
+                      
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                        <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
+                            <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title destacos">Arriendo</h5>
+            
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Palermo</li>
+                                <li class="list-group-item">48 metros</li>
+                                <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
+                            </ul>
+                            <div class="d-flex justify-content-evenly  btn boton-card">
+                                <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
+                                <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacados">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-
-
-
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">La pola</li>
-                    <li class="list-group-item">78 m2 </li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href="./detalle-card.html"> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-
-
-
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cañaveral</li>
-                    <li class="list-group-item">78 m2</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href=""> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href=""> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href=""> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href=""> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-            <div class="card col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12" style="width: 18rem; ">
-                <img src="./imagenes/propiedadesarriendo/Torreosantamonica/IMG_20210722_122419341_HDR.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title destacos">Arriendo</h5>
-
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item"> <strong> Ibague - Tolima</strong> </li>
-                </ul>
-                <div class="d-flex justify-content-evenly  btn boton-card">
-                    <a href="contactanos.html"> <button class="btn btn-primary" type="button">Contacto</button></a>
-                    <a href=""> <button class="btn btn-primary" type="button">Ver Mas</button></a>
-                </div>
-            </div>
-
-
-
-        </section>
-
+        </div>
         <div class="container-servicios mt-3 col-3	col-sm-3	col-md-3	col-lg-12	col-xl-12	col-xxl-12">
             <h2 class="Servicios-principal text-center"> Ventas </h2>
         </div>
