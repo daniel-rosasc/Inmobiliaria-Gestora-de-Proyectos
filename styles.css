@@ -184,3 +184,8 @@ a.nav-link:hover {
   width: 80%;
   margin-bottom: 40px;
 }
+
+.border-input{
+border: 2px red solid;
+
+}
